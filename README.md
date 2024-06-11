@@ -1,5 +1,8 @@
 # Check the weather by city application
 
+## Live Demo
+https://kimm-09.github.io/Weather-App/
+
 ## Applicaiton Summary
 This is a simple weather checking application that calls upon an openweathermap.org API key
 and returns the result to the screen. By default, it displays only the search box. Once a 
