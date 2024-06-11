@@ -1,7 +1,7 @@
 
 
 const apiKey = "1af0216bb07194723f1508813638e3b6";
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?&units=imperial&q=";
 const searchBox = document.querySelector(".search input");
 const searchbtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon")
@@ -20,7 +20,7 @@ async function checkWeather (city) {
 
     //display the info returning from the API to the corresponding class names in the HTML
     document.querySelector(".city").innerHTML = data.name;
-    document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°c";
+    document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°f";
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + " mph";
 
